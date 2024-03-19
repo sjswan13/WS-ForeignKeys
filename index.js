@@ -1,7 +1,7 @@
 require('dotenv').config()
 console.log(process.env)
 
-const pg = require('pg');
+const pg = require('pg'),
 const express = require('express');
 const app = express();
 const client = new pg.Client(process.env.DATABASE_URL || 
